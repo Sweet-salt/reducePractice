@@ -55,3 +55,13 @@ const unsubscribe = store.subscribe( () => {
 ```
 - 리턴이 unsubscribe임!!!!!
 - unsubscribe(); 하면 제거됨 
+
+### react-redux
+- Provider 컴포넌트를 제공해줌.
+- connect 함수를 통해 "컨테이너"를 만듬.
+    - 컨테이너는 스토어의 state와 dispatch를 연결한 컴포넌트에 props로 넣어주는 역할을 합니다.
+    - 필요한것
+        - 어떤 state를 어떤 props에 연결할 것인지에 대한 정의
+        - 어떤 dispatch(액션)를 어떤 props에 연결할 것인지에 대한 정의
+        - 그 props를 보낼 컴포넌트의 정의
+

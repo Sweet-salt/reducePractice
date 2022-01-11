@@ -1,16 +1,11 @@
-import {ADD_TODO} from "./actions";
+import { combineReducers } from "redux";
+import {ADD_TODO, COMPLETE_TODO, SHOW_ALL, SHOW_COMPLETE} from "./actions";
 
-const initialState = [];
-export function todoApp(previousState = initialState, action){
+const initialState = {todos: [], filter: 'ALL'};
+const todosInitialState = initialState.todos;
+const filterInitialState = initialState.filter;
 
-    // if(previousState === undefined){
-    //     return [];
-    // }
 
-    if(action.type === ADD_TODO){
-        return[...previousState, action.todo];
-    }
 
-    return previousState;
-}
+
 
